@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.container {
+  width: 450px;
+  max-width: 90%;
+  color: white;
+  background-color: hsl(213, 19%, 18%);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: hsla(217, 12%, 63%, 0.22);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h3 {
+  font-size: 2rem;
+}
+
+.container p {
+  font-size: 17px;
+  color: hsl(217, 12%, 63%);
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 100%;
+  background-color: hsla(217, 12%, 63%, 0.22);
+  color: hsl(217, 12%, 63%);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.container button {
+  padding: 12px 0;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: hsl(25, 97%, 53%);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.rating.active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+}
+
+.resultContainer {
+  width: 400px;
+  max-width: 90%;
+  background-color: hsl(213, 19%, 18%);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+  color: white;
+  display: none;
+}
+
+.result-div {
+  background-color: hsla(217, 12%, 63%, 0.22);
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.result-div p.result-para {
+  color: hsl(25, 97%, 53%);
+}
+
+.resultContainer h4 {
+  font-size: 2.1rem;
+}
+
+.resultContainer p {
+  color: hsl(217, 12%, 63%);
+}
+
+@media screen and (min-width: 900px) {
+  .container button:hover {
+    background-color: white;
+  }
+
+  .rating:hover {
+    background-color: white;
+    color: hsl(216, 12%, 8%);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    padding: 15px;
+  }
+
+  .rating {
+    width: 40px;
+    height: 40px;
+  }
+}

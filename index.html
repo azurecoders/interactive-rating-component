@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive Rating Component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle">
+        <img src="./images/icon-star.svg" alt="" />
+      </div>
+      <h3>How did we do?</h3>
+      <p>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div class="ratings">
+        <div class="rating active">1</div>
+        <div class="rating">2</div>
+        <div class="rating">3</div>
+        <div class="rating">4</div>
+        <div class="rating">5</div>
+      </div>
+      <button id="submitBtn">Submit</button>
+    </div>
+    <div class="resultContainer">
+      <img src="./images/illustration-thank-you.svg" alt="" />
+      <div class="result-div">
+        <p class="result-para">
+          You selected <span id="result">1</span> out of 5
+        </p>
+      </div>
+      <h4>Thank You</h4>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
